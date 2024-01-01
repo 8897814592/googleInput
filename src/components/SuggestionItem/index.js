@@ -9,12 +9,13 @@ const SuggestionItem = props => {
     updateInput(suggestion)
   }
   return (
-    <li>
+    <li className="item">
       <p>{suggestion}</p>
-      <button onClick={onClickImage}>
+      <button type="button" onClick={onClickImage}>
         <img
           src="https://assets.ccbp.in/frontend/react-js/diagonal-arrow-left-up.png"
           alt="arrow"
+          className="image"
         />
       </button>
     </li>
